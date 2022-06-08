@@ -7,7 +7,7 @@ function loadHTML(page) {
 
 current_page = 1;
 total_pages = 2;
-document.getElementById("pagina").innerHTML = "Página " + current_page + " de " + total_pages;
+document.getElementById("paginas").innerHTML = "Página " + current_page + " de " + total_pages;
 
 function lastPage() {
 

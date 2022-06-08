@@ -5,7 +5,7 @@ require_once('header.php');
 ?>
 
 
-<body index = "pagina">
+<body id = "pagina">
 
 </body>
 
