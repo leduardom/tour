@@ -8,10 +8,16 @@ function loadMap() {
 }
 
 function loadHTML(page) {
-    fetch(page)
-        .then(response => response.text())
-        .then(text => document.getElementById('pagina').innerHTML = text)
-        .then(text => loadMap());
+    if (page == "2.html") {
+        fetch(page)
+            .then(response => response.text())
+            .then(text => document.getElementById('pagina').innerHTML = text)
+            .then(text => loadMap());
+    } else {
+        fetch(page)
+            .then(response => response.text())
+            .then(text => document.getElementById('pagina').innerHTML = text);
+    }
 
 }
 
