@@ -1,10 +1,16 @@
 function loadMap() {
 
-    var map = L.map('map').setView([51.505, -0.09], 13);
+    var map = L.map('map').setView([-23.303794, -51.159618], 40);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '© OpenStreetMap'
     }).addTo(map);
+
+    function onMapClick(e) {
+        alert("You clicked the map at " + e.latlng);
+    }
+
+    map.on('click', onMapClick);
 }
 
 function loadHTML(page) {
